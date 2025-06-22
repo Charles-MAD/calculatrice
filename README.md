@@ -4,7 +4,7 @@ Ce projet est une petite application Python en ligne de commande qui permet d'ad
 
 ## Fonctionnalités
 
-- Saisir de deux nombres entiers
+- Saisie de deux nombres entiers
 - Affichage du résultat de leur addition 
 - Possibilité de répéter l'opération autant de fois que nécessaire
 - Gestion des erreurs si les entrées ne sont pas valides
