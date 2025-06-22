@@ -1,20 +1,21 @@
 import sys
 
-while True:
+
+choix = ""
+while choix != 'non':
     # On demande deux à l'utilisateur
-    a = input("Veuillez entrer un premier nombre : ")
-    b = input("Veuillez entrer un deuxième nombre : ")
+    num1 = input("Veuillez entrer un premier nombre : ")
+    num2 = input("Veuillez entrer un deuxième nombre : ")
 
     # On affiche une phrase si les nombres entrés ne sont pas valides.
-    if (not a.isdigit() or not b.isdigit()):
+    if (not num1.isdigit() or not num2.isdigit()):
         print("Veuillez entrer deux nombres valides")
     else:
         # On affiche le resultat de l'addition
-        resultat = f"Le résultat de l'addition du nombre {a} avec le nombre {b} est égal à {int(a) + int(b)}"
+        resultat = f"Le résultat de l'addition du nombre {num1} avec le nombre {num2} est égal à {int(num1) + int(num2)}"
         print(resultat)
     choix = input("Avez-vous d'autres nombres à additionner ? oui/non ")
     if choix == 'oui':
         continue
-    else:
-        print("==Fin de notre programme==")
-        sys.exit()
+print("==Fin de notre programme==")
+sys.exit()
